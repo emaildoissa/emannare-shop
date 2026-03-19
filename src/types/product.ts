@@ -8,4 +8,5 @@ export interface Product {
   benefits: string[];
   icon: 'moon' | 'eye-off' | 'armchair' | 'flame' | 'cloud' | 'gift';
   gradient: [string, string];
+  image?: string;
 }

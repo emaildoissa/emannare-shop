@@ -16,10 +16,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick, index }) =>
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <div 
-        className="flex items-center justify-center py-12"
+        className="flex items-center justify-center relative overflow-hidden h-64"
         style={{ background: `linear-gradient(135deg, ${product.gradient[0]}15, ${product.gradient[1]}10)` }}
       >
-        <ProductIcon icon={product.icon} gradient={product.gradient} size={140} />
+        {product.image ? (
+          <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+        ) : (
+          <ProductIcon icon={product.icon} gradient={product.gradient} size={140} />
+        )}
       </div>
       <div className="p-5">
         <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-text/40">{product.category}</span>

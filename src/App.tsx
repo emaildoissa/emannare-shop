@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logoUrl from './assets/logo.png';
 import { MessageCircle, Phone, Instagram, Facebook } from 'lucide-react';
 import { products, categories } from './data/products';
 import { type Product } from './types/product';
@@ -25,9 +26,8 @@ const App: React.FC = () => {
       {/* HEADER */}
       <header className="sticky top-0 z-40 w-full bg-brand-bg/80 backdrop-blur-md border-b border-brand-text/5 animate-slide-down">
         <div className="max-w-6xl mx-auto px-5 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-center sm:text-left">
-            <h1 className="text-3xl font-bold font-serif tracking-tight">Ateliê Terapêutico</h1>
-            <p className="text-xs sm:text-sm opacity-60">Produtos artesanais para relaxamento e bem-estar</p>
+          <div className="flex items-center justify-center sm:justify-start">
+            <img src={logoUrl} alt="Logo" className="h-24 sm:h-32 w-auto object-contain" />
           </div>
           <button className="flex items-center gap-2 px-6 py-3 bg-brand-primary text-brand-bg rounded-full text-sm font-semibold shadow-md hover:scale-105 transition-transform">
             <MessageCircle size={18} />
@@ -37,7 +37,7 @@ const App: React.FC = () => {
       </header>
 
       {/* HERO */}
-      <section className="relative py-16 sm:py-24 overflow-hidden bg-gradient-to-b from-brand-bg to-[#F0EDE8] animate-fade-up">
+      <section className="relative py-16 sm:py-24 overflow-hidden bg-gradient-to-b from-brand-bg to-[#DFE1E4] animate-fade-up">
         <div className="max-w-4xl mx-auto px-5 text-center">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-brand-primary/10 text-brand-primary mb-6">
             ✨ Artesanal & Natural

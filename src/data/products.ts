@@ -1,48 +1,54 @@
 import { type Product } from '../types/product';
+import imgTravesseirinho from '../assets/produtosImg/Travesseirinho  de ervas para sono tranquilo.png';
+import imgMascara from '../assets/produtosImg/Mascara de ervas para descanso mental e bom sono.png';
+import imgAlmofada from '../assets/produtosImg/Almofada térmica  fria ou quente.png';
+import imgKit from '../assets/produtosImg/Kit mamãe bebê .png';
+import imgCesta from '../assets/produtosImg/Cesta de Páscoa .png';
 
-export const categories = ["Todos", "Travesseiros Terapêuticos", "Máscaras", "Almofadas", "Outros"] as const;
+export const categories = ["Todos", "Kits", "Travesseiros Terapêuticos", "Máscaras", "Almofadas"] as const;
 
 export const products: Product[] = [
+
+
+
   {
-    id: 1, name: "Travesseiro Cervical Herbal", category: "Travesseiros Terapêuticos",
-    price: 189.90, shortDesc: "Alívio para dores no pescoço com ervas naturais.",
-    fullDesc: "Travesseiro ergonômico recheado com sementes de linhaça e lavanda, moldando-se ao formato do pescoço para alívio de tensões e dores cervicais.",
-    benefits: ["Alívio de dor cervical", "Aromaterapia natural", "Lavável"],
-    icon: "moon", gradient: ["#A8C5A0", "#6B8F71"]
+    id: 7, name: "Travesseirinho de ervas para sono tranquilo", category: "Travesseiros Terapêuticos",
+    price: 53.00, shortDesc: "Relaxamento e bem-estar para suas noites.",
+    fullDesc: "Travesseirinho recheado com ervas calmantes cuidadosamente selecionadas para proporcionar um sono tranquilo, agradável e revitalizante.",
+    benefits: ["Sono tranquilo", "Aroma calmante", "Bem-estar natural"],
+    icon: "moon", gradient: ["#82A284", "#5C765E"],
+    image: imgTravesseirinho
   },
   {
-    id: 2, name: "Máscara de Olhos Relaxante", category: "Máscaras",
-    price: 79.90, shortDesc: "Bloqueio total de luz com toque aveludado.",
-    fullDesc: "Máscara de seda natural com recheio de sementes de mostarda, pode ser usada aquecida ou resfriada para alívio de enxaquecas e tensão ocular.",
-    benefits: ["Alívio de enxaqueca", "Aquece e resfria", "Seda natural"],
-    icon: "eye-off", gradient: ["#C4A98D", "#9B7B5E"]
+    id: 8, name: "Mascara de ervas para descanso mental e bom sono", category: "Máscaras",
+    price: 44.00, shortDesc: "Relaxamento profundo e descanso mental.",
+    fullDesc: "Máscara terapêutica formulada com um mix de ervas relaxantes para aliviar o estresse, as tensões do dia a dia e proporcionar um descanso reparador ao corpo e à mente.",
+    benefits: ["Melhora o sono", "Alívio de tensão", "Bloqueio de luz"],
+    icon: "eye-off", gradient: ["#A8C5A0", "#6B8F71"],
+    image: imgMascara
   },
   {
-    id: 3, name: "Almofada Lombar Anatômica", category: "Almofadas",
-    price: 149.90, shortDesc: "Suporte ergonômico para a lombar.",
-    fullDesc: "Design anatômico com espuma viscoelástica revestida em tecido de algodão orgânico. Ideal para uso em cadeiras de escritório ou carro.",
-    benefits: ["Suporte lombar", "Espuma viscoelástica", "Algodão orgânico"],
-    icon: "armchair", gradient: ["#B8A9C9", "#7E6B99"]
+    id: 9, name: "Almofada térmica fria ou quente", category: "Almofadas",
+    price: 62.00, shortDesc: "Compressas terapêuticas na temperatura ideal.",
+    fullDesc: "Almofada térmica versátil que pode ser usada tanto aquecida quanto resfriada. Ideal para diminuir dores musculares, cólicas e inflamações, promovendo relaxamento natural do corpo.",
+    benefits: ["Aquece e resfria", "Alívio muscular", "Relaxamento"],
+    icon: "flame", gradient: ["#E8A87C", "#C47A4E"],
+    image: imgAlmofada
   },
   {
-    id: 4, name: "Bolsa Térmica de Sementes", category: "Outros",
-    price: 59.90, shortDesc: "Compressas quentes ou frias naturais.",
-    fullDesc: "Bolsa artesanal recheada com sementes de linhaça e ervas aromáticas. Aqueça no micro-ondas ou resfrie no freezer para alívio muscular.",
-    benefits: ["Uso quente e frio", "Ervas aromáticas", "100% natural"],
-    icon: "flame", gradient: ["#E8A87C", "#C47A4E"]
+    id: 10, name: "Kit mamãe bebê", category: "Kits",
+    price: 98.00, shortDesc: "Momentos de tranquilidade para a mamãe e o bebê.",
+    fullDesc: "Conjunto pensado para o bem-estar: Almofada térmica para cólicas, Travesseirinho de ervas para um bom soninho, Chás para banho do bebê, e ainda Máscara de ervas para o descanso da mamãe e escalda pés.",
+    benefits: ["Alívio de cólicas", "Descanso profundo", "Cuidado materno"],
+    icon: "gift", gradient: ["#D4A5A5", "#A67272"],
+    image: imgKit
   },
   {
-    id: 5, name: "Travesseiro de Trigo Sarraceno", category: "Travesseiros Terapêuticos",
-    price: 219.90, shortDesc: "Conforto adaptável com cascas naturais.",
-    fullDesc: "Recheado com cascas de trigo sarraceno que se adaptam ao contorno da cabeça, proporcionando suporte firme e ventilação natural durante o sono.",
-    benefits: ["Ventilação natural", "Altura ajustável", "Hipoalergênico"],
-    icon: "cloud", gradient: ["#9BBEC7", "#5D8A94"]
-  },
-  {
-    id: 6, name: "Kit Spa em Casa", category: "Outros",
-    price: 299.90, shortDesc: "Máscara + bolsa térmica + sachê de ervas.",
-    fullDesc: "Kit completo para momentos de relaxamento: inclui máscara de olhos de seda, bolsa térmica de sementes e sachê de lavanda para aromatizar o ambiente.",
-    benefits: ["Kit completo", "Presente perfeito", "Embalagem especial"],
-    icon: "gift", gradient: ["#D4A5A5", "#A67272"]
+    id: 11, name: "Cesta de Páscoa", category: "Kits",
+    price: 98.00, shortDesc: "O presente terapêutico perfeito para renovação.",
+    fullDesc: "Cesta de Páscoa recheada de bem-estar contendo: Travesseirinho de ervas, Almofada térmica, Máscara para dormir e Escalda pés. Um verdadeiro carinho em forma de presente para quem você quer cuidar.",
+    benefits: ["Mix completo de produtos", "Relaxamento total", "Perfeito para presente"],
+    icon: "gift", gradient: ["#E8A87C", "#C47A4E"],
+    image: imgCesta
   }
 ];

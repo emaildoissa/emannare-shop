@@ -28,10 +28,14 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
         </button>
 
         <div 
-          className="flex items-center justify-center py-16"
+          className={`flex items-center justify-center relative overflow-hidden ${product.image ? 'h-80' : 'py-16'}`}
           style={{ background: `linear-gradient(135deg, ${product.gradient[0]}20, ${product.gradient[1]}15)` }}
         >
-          <ProductIcon icon={product.icon} gradient={product.gradient} size={200} />
+          {product.image ? (
+            <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+          ) : (
+            <ProductIcon icon={product.icon} gradient={product.gradient} size={200} />
+          )}
         </div>
 
         <div className="p-6 sm:p-10">
