@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logoUrl from './assets/logo.png';
-import { MessageCircle, Phone, Instagram, Facebook } from 'lucide-react';
+import { MessageCircle, Phone } from 'lucide-react';
 import { products, categories } from './data/products';
 import { type Product } from './types/product';
 import ProductCard from './components/ProductCard';
@@ -29,10 +29,15 @@ const App: React.FC = () => {
           <div className="flex items-center justify-center sm:justify-start">
             <img src={logoUrl} alt="Logo" className="h-24 sm:h-32 w-auto object-contain" />
           </div>
-          <button className="flex items-center gap-2 px-6 py-3 bg-brand-primary text-brand-bg rounded-full text-sm font-semibold shadow-md hover:scale-105 transition-transform">
+          <a 
+            href="https://wa.me/5551999010411" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-6 py-3 bg-brand-primary text-brand-bg rounded-full text-sm font-semibold shadow-md hover:scale-105 transition-transform"
+          >
             <MessageCircle size={18} />
             Fale no WhatsApp
-          </button>
+          </a>
         </div>
       </header>
 
@@ -97,12 +102,12 @@ const App: React.FC = () => {
             </div>
             <div className="flex items-center gap-3 text-sm opacity-70">
               <Phone size={16} />
-              <span>(11) 99999-0000</span>
+              <span>(51) 99901-0411</span>
             </div>
             <div className="flex gap-5">
-              {[Instagram, Facebook, MessageCircle].map((Icon, i) => (
-                <a key={i} href="#" className="opacity-50 hover:opacity-100 transition-opacity"><Icon size={22} /></a>
-              ))}
+              <a href="https://wa.me/5551999010411" target="_blank" rel="noopener noreferrer" className="opacity-50 hover:opacity-100 transition-opacity">
+                <MessageCircle size={22} />
+              </a>
             </div>
           </div>
           <div className="mt-12 pt-8 text-center text-[10px] opacity-20 border-t border-brand-bg/10 uppercase tracking-[0.2em]">

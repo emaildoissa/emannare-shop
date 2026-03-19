@@ -57,10 +57,15 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
             <span className="text-3xl font-bold text-brand-primary">
                {new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.price)}
             </span>
-            <button className="flex-1 w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 bg-brand-primary text-brand-bg rounded-full text-sm font-bold shadow-lg hover:scale-[1.03] active:scale-95 transition-all">
+            <a 
+              href={`https://wa.me/5551999010411?text=${encodeURIComponent(`Olá! Gostaria de comprar o produto ${product.name} no valor de R$ ${product.price.toFixed(2)}.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 bg-brand-primary text-brand-bg rounded-full text-sm font-bold shadow-lg hover:scale-[1.03] active:scale-95 transition-all"
+            >
               <MessageCircle size={20} />
               Comprar via WhatsApp
-            </button>
+            </a>
           </div>
         </div>
       </div>

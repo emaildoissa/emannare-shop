@@ -4,6 +4,7 @@ import imgMascara from '../assets/produtosImg/Mascara de ervas para descanso men
 import imgAlmofada from '../assets/produtosImg/Almofada térmica  fria ou quente.png';
 import imgKit from '../assets/produtosImg/Kit mamãe bebê .png';
 import imgCesta from '../assets/produtosImg/Cesta de Páscoa .png';
+import imgMascaraKids from '../assets/produtosImg/Máscara  de ervas para criança.png';
 
 export const categories = ["Todos", "Kits", "Travesseiros Terapêuticos", "Máscaras", "Almofadas"] as const;
 
@@ -50,5 +51,13 @@ export const products: Product[] = [
     benefits: ["Mix completo de produtos", "Relaxamento total", "Perfeito para presente"],
     icon: "gift", gradient: ["#E8A87C", "#C47A4E"],
     image: imgCesta
+  },
+  {
+    id: 12, name: "Máscara de ervas para criança", category: "Máscaras",
+    price: 35.00, shortDesc: "Sono aconchegante e tranquilo para os pequenos.",
+    fullDesc: "Máscara especialmente feita para as crianças, utilizando um mix de ervas extremamente suaves que acalmam, relaxam e criam um ambiente super leve para a hora de dormir.",
+    benefits: ["Acalma a criança", "Aroma suave", "Diminui a agitação"],
+    icon: "eye-off", gradient: ["#B8A9C9", "#7E6B99"],
+    image: imgMascaraKids
   }
 ];
