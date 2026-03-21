@@ -5,8 +5,9 @@ import imgAlmofada from '../assets/produtosImg/Almofada térmica  fria ou quente
 import imgKit from '../assets/produtosImg/Kit mamãe bebê .png';
 import imgCesta from '../assets/produtosImg/Cesta de Páscoa .png';
 import imgMascaraKids from '../assets/produtosImg/Máscara  de ervas para criança.png';
+import imgSaquinho from '../assets/produtosImg/Saquinho da Ansiedade.png';
 
-export const categories = ["Todos", "Kits", "Travesseiros Terapêuticos", "Máscaras", "Almofadas"] as const;
+export const categories = ["Todos", "Kits", "Travesseiros Terapêuticos", "Máscaras", "Almofadas", "Saquinhos"] as const;
 
 export const products: Product[] = [
 
@@ -59,5 +60,13 @@ export const products: Product[] = [
     benefits: ["Acalma a criança", "Aroma suave", "Diminui a agitação"],
     icon: "eye-off", gradient: ["#B8A9C9", "#7E6B99"],
     image: imgMascaraKids
+  },
+  {
+    id: 13, name: "Saquinho da Ansiedade", category: "Saquinhos",
+    price: 30.00, shortDesc: "Calma e tranquilidade para carregar sempre com você.",
+    fullDesc: "Um saquinho terapêutico feito para carregar no bolso ou bolsa. Contém uma seleção especial de ervas calmantes para ajudar a aliviar a ansiedade e trazer uma sensação de paz quando necessário.",
+    benefits: ["Prático para carregar", "Aroma calmante", "Alívio da ansiedade"],
+    icon: "cloud", gradient: ["#A3D2A9", "#63996A"],
+    image: imgSaquinho
   }
 ];
