@@ -6,6 +6,7 @@ import imgKit from '../assets/produtosImg/Kit mamãe bebê .png';
 import imgCesta from '../assets/produtosImg/Cesta de Páscoa .png';
 import imgMascaraKids from '../assets/produtosImg/Máscara  de ervas para criança.png';
 import imgSaquinho from '../assets/produtosImg/Saquinho da Ansiedade.png';
+import imgGola from '../assets/produtosImg/Gola termica.png';
 
 export const categories = ["Todos", "Kits", "Travesseiros Terapêuticos", "Máscaras", "Almofadas", "Saquinhos"] as const;
 
@@ -46,9 +47,9 @@ export const products: Product[] = [
     image: imgKit
   },
   {
-    id: 11, name: "Cesta de Páscoa", category: "Kits",
+    id: 11, name: "Cesta presente  kit completo", category: "Kits",
     price: 98.00, shortDesc: "O presente terapêutico perfeito para renovação.",
-    fullDesc: "Cesta de Páscoa recheada de bem-estar contendo: Travesseirinho de ervas, Almofada térmica, Máscara para dormir e Escalda pés. Um verdadeiro carinho em forma de presente para quem você quer cuidar.",
+    fullDesc: "Cesta presente: Travesseirinho de ervas, Almofada térmica, Máscara para dormir e Escalda pés. Um verdadeiro carinho em forma de presente para quem você quer cuidar.",
     benefits: ["Mix completo de produtos", "Relaxamento total", "Perfeito para presente"],
     icon: "gift", gradient: ["#E8A87C", "#C47A4E"],
     image: imgCesta
@@ -68,5 +69,13 @@ export const products: Product[] = [
     benefits: ["Prático para carregar", "Aroma calmante", "Alívio da ansiedade"],
     icon: "cloud", gradient: ["#A3D2A9", "#63996A"],
     image: imgSaquinho
+  },
+  {
+    id: 14, name: "Gola térmica", category: "Almofadas",
+    price: 98.00, shortDesc: "Conforto e alívio para pescoço e ombros.",
+    fullDesc: "Gola térmica especialmente desenhada para se ajustar perfeitamente à região do pescoço e ombros. Proporciona alívio imediato para tensões musculares, estresse e dores articulares através do calor terapêutico.",
+    benefits: ["Alívio de tensões", "Ergonômica", "Relaxamento profundo"],
+    icon: "flame", gradient: ["#D4A5A5", "#A67272"],
+    image: imgGola
   }
 ];
